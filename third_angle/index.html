@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link href="./3rd_angle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Triangle Calculator</h1>
+        <h2>Enter any 2 angles of a triangle to find the third.</h2>
+        <form>
+            <div>
+                <label for="angle1">Angle 1:</label>
+                <input id="angle1" type="number" min="0">
+            </div>
+            <div>
+                <label for="angle2">Angle 2:</label>
+                <input id="angle2" type="number" min="0">
+            </div>
+            <div>
+                <label for="angle3">Angle 3:</label>
+                <p id="angle3"></p>
+            </div>
+            <p id="typeOf">&nbsp;</p>
+            <div class="buttons">
+                <button id="submit">Calculate</button>
+                <input id="clear" type="reset" value="Reset">
+            </div>
+        </form>
+        <script src="./3rd_angle.js"></script>
+    </main>
+</body>
+</html>

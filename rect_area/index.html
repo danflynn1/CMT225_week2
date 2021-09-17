@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Calculator</title>
+    <link href="./rectarea.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Rectangle Calculator</h1>
+        <h2>Input the length and width of a rectangle to find its area and perimeter:</h2>
+        <form>
+            <div>
+                <label for="length">Length:</label>
+                <br/>
+                <input id="length" type="number" min="0">
+            </div>
+            <div>
+                <label for="width">Width:</label>
+                <br/>
+                <input id="width" type="number" min="0">
+            </div>
+            <div>
+                <label for="units">Units:</label>
+                <select id="units">
+                    <option default>cm</option>
+                    <option>m</option>
+                    <option>km</option>
+                    <option>in</option>
+                    <option>ft</option>
+                    <option>yds</option>
+                    <option>mi</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <input id="submit_form" type="submit" value="Calculate">
+                <input id="clear" type="reset" value="Reset">
+            </div>
+            <div class="result">
+                <label>Area:</label>
+                <p id="area"></p>
+            </div>
+            <div class="result">
+                <label>Perimeter:</label>
+                <p id="perimeter"></p>
+            </div>
+        </form>
+        <script src="./rectarea.js"></script>
+    </main>
+</body>
+</html>

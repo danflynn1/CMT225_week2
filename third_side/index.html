@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Form</title>
+    <link href="3rd_side.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Triangle Side Finder</h1>
+        <h2>Enter the length of two sides of a right triangle. Find the length of the thrid side using the Pythagorean Theorem.</h2>
+        <form>
+            <div>
+                <label for="side1">Side 1:</label>
+                <input id="side1" type="text">
+            </div>
+            <div>
+                <label for="side2">Side 2:</label>
+                <input id="side2" type="text">
+            </div>
+            <p>Which side is the hypotenuse, or longest side?</p>
+            <div class="radio">
+                <input id="hypSide1" type="radio" name="isLongest" value="">
+                <label for="hypSide1">Side 1</label>
+                <br/>
+                <input id="hypSide2" type="radio" name="isLongest">
+                <label for="hypSide2">Side 2</label>
+                <br/>
+                <input id="neither" type="radio" name="isLongest" checked>
+                <label for="neither">Neither</label>
+            </div>
+            <p id="side3">&nbsp;</p>
+            <div class="buttons">
+                <button id="submit">Calculate</button>
+                <input id="clearForm" type="reset" value="Reset">
+            </div>
+        </form>
+        <script src="3rd_side.js"></script>
+    </main>
+</body>
+</html>
